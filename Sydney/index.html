@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--Authors: Ken Santoso, Albert Bui-->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Unihack" />
+	<meta name="keywords" content="Unihack" />
+	<meta name="author" content="Ken, Al" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap&libraries=places,geometry" type="text/javascript" async defer></script>
+    <script src="getstuff.js" type="text/javascript"></script>
+	
+<title id = "title">Get Lost</title>
+</head>
+
+
+<body>
+<header> <h1 id="banner"> Get Lost</h1>
+</header>
+
+
+<article>
+
+
+<section class="center">
+  
+  <form method = "post" action = "checklogin.php">
+	   <p class = "maintext"><span class = "heading"> Get</span> <select name="category" id="category" class = "round">
+		<option value="restaurant" class = "options">food</option>
+		<option value="bar" class = "options">drink</option>
+		<option value="cafe" class = "options">coffee</option>
+		<option value="movie_theater" class = "options">entertained</option>
+		<option value="gym" class = "options">fit</option>
+		<option value="lucky" class = "options">lucky</option>
+		<option value="more" class = "options">more</option>
+</select>
+
+<span class = "heading">in</span>
+<select name="time" id="time" class = "round">
+		<option value="15" class = "options">15 minutes</option>
+		<option value="30" class = "options">30 minutes</option>
+		<option value="60" class = "options">60 minutes</option>
+		<option value="120" class = "options">2 hours</option>
+</select>
+
+
+
+
+		<input type="button" id="submit" value = "Let's go!" onclick="displayMap()" />
+		</p>
+  </form>
+ 
+  
+</section>
+<!-- style="width: 500px; height: 300px" -->
+<div id="map" style="width: 65%; height: 400px">
+</div>
+</article>
+
+<div class="clear"></div>
+<footer>
+
+<p id = "author">Created by Albert Bui and Ken Santoso</p>
+</footer>
+
+</body>
+</html>
+
+
+
