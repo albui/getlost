@@ -1,0 +1,312 @@
+/*style.css
+Author: Ken Santoso, Albert Bui
+
+description: Unihack CSS 
+*/
+
+html{
+	background-image: url("background.jpg"); /*taken from https://www.flickr.com/photos/caseyyee/4369705196*/
+	background-size:100%;
+
+
+
+}
+
+#banner{
+padding: 0px 0px 0px 38px;
+font-size:50px;
+
+}
+
+
+
+
+body {		
+	margin: 0 ;
+	padding: 0 ;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	color:white;
+
+	font-family: Helvetica, Arial, Lucida Grande, sans-serif;
+	
+	
+	}
+
+form
+{
+
+	font-size: 20px;
+}
+
+.heading {
+font-size:30px;
+margin:10px 10px 10px 30px;
+
+}
+
+select
+{
+
+	font-size: 25px;
+	 /* styling */
+  background-color: transparent;
+  color:white;
+
+  border: thin solid white;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.round {
+  background-image:
+    linear-gradient(45deg, transparent 50%,black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%),
+    radial-gradient(white 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .25em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.round:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .25em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+
+select.classic {
+  background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, grey 50%, transparent 50%),
+    linear-gradient(to right, white, white);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+	
+ section.center {					/*This was to set the section to the center when there was no aside element */
+	
+			margin-left:auto;
+			margin-right:auto;
+			float:none;
+
+			
+			}
+		
+	
+
+article {
+	clear:both;
+	margin-left:auto;		
+
+	margin-right:auto;
+	width:100%;
+	min-height:100%;
+	overflow-y:hidden;
+	border-radius: 25px;
+	
+
+	
+}
+
+.clear {
+display:block;
+float:none;
+clear:both;
+height:0px;
+width:100%;
+margin:0;
+padding:0;
+border:0;
+}
+
+.infowindow {
+
+
+box-shadow: 8px 8px 16px #222;
+color:black;
+border-radius: 0px;
+clear:both;
+margin-bottom: 10px
+
+
+}
+
+.placename{
+
+	font-weight: bold;
+
+}
+
+
+#map{
+clear:both;
+	margin-left:auto;		
+
+	margin-right:auto;
+
+	
+	
+}
+
+.menu {
+background: rgba(255, 255, 255, 0.5);
+border: 1px;
+color:white;
+border-radius: 5px
+
+
+}
+
+.options {
+background: rgba(255, 255, 255, 0.1);
+color:black;
+}
+
+#author{
+
+	float:right;
+
+
+}
+
+
+#submit {
+ background: rgba(255, 255, 255, 0.5);
+margin-left: 38px;
+ 
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  text-shadow: 0px 1px 3px #666666;
+  font-family: Helvetica;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+}
+
+.placeimg{
+
+
+margin-left:auto;
+margin-right:auto;
+padding-bottom: 10px;
+
+}
+.placename{
+margin-left:auto;
+	margin-right:auto;
+	
+}
+
+.direction{
+	margin-left:auto;
+	margin-right:auto;
+
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: grey;
+    color: #FFF;
+    padding: 8px 12px;
+    text-decoration: none;
+    padding-top: 10px;
+
+
+}
+
+
+
+.rating
+{
+
+	font-weight: none;
+}
+
+a {
+    
+}
+
+#submit:hover {
+  background: #343c40;
+  text-decoration: none;
+}
+section {			
+	background:rgba(255, 255, 255, 0.5);
+font-size:;
+	float:left;
+	width:65%;
+	border: 0px solid;
+	border-radius: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+}
+#map{
+
+	border-radius: 20px;
+}
+
+section p 	{				
+		max-width:100%;
+		padding:10px 10px 10px 10px;
+		}
+section form {
+
+	padding:10px 10px 10px 10px;
+
+}
+		
+section h1		{font-size:30px
+				
+}
+		
+table, th, td {
+   border: 1px solid black;
+} 
